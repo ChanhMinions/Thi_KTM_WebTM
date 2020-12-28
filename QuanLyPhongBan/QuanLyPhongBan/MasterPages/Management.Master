@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Management.master.cs" Inherits="QuanLyPhongBan.MasterPages.Management" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="../CSS/trangchu.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                    <aside class="sidebar">
+                        <nav style="width: 200px"; float: left;">
+           </nav>
+                        <section id="MainContent">
+            </section>
+                        </aside>
+                    </div>
+
+        <div class="container-1">
+    <h1 data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom"
+         data-aos-delay="1300">THANH NIÊN</h1>
+            <center><button type="button" class="btn btn-header">Bạn hãy lựa chọn chúng tôi !</button></center>
+            <button type="button" class="btn btn-header btn-play">&#9658;</button>
+            <h3 data-aos="zoom-out-down"class="text-center">Diễn đàn của hội hiệp liên thanh niên Việt Nam</h3>
+            </div>
+        <div class="container-2">
+            <div class="bt1">
+               <input type="search" placeholder="Search">
+                <h4>Seach....</h4>
+            </div>
+            </div>
+        <div class="container-11">
+            <nav>
+            <ul class="container-12">
+                   <li><a href="~/Management/TrangChu.aspx" runat="server">Trang Chủ</a></li>
+                   <li><a href="~/Management/Default.aspx" runat="server"> Tin Tức </a></li>
+                   <li><a href="~/Management/Genres.aspx" runat="server"> Tác Giả</a></li>
+                   <li><a href="~/Management/Reviews.aspx" runat="server"> Chủ Đề </a></li>
+                    
+               </ul>
+                </nav>
+            <div>
+               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+       </div>
+            </div>
+        <div class="container-3">
+            
+                <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
+                 <asp:ContentPlaceHolder ID="cpMainContent1" runat="server">
+                    <p>
+                        <a href="../Management/Default.aspx">Default.aspx</a></p>
+                </asp:ContentPlaceHolder>
+                    </asp:ContentPlaceHolder>
+            
+        </div>
+        <div class="container-4">
+            <div class="card">
+		<div class="card-image">	
+			<h2 class="card-heading">
+				Get started
+				<small>Let us create your account</small>
+			</h2>
+		</div>
+		<form class="card-form">
+			<div class="input">
+				<input type="text" class="input-field" value="Phan Cư Chánh" required/>
+				<label class="input-label">Full name</label>
+			</div>
+						<div class="input">
+				<input type="text" class="input-field" value="cuchanhony@gmail.com" required/>
+				<label class="input-label">Email</label>
+			</div>
+						<div class="input">
+				<input type="password" class="input-field" value="bbnn123" required/>
+				<label class="input-label">Password</label>
+			</div>
+			<div class="action">
+				<button class="action-button">Get started</button>
+			</div>
+		</form>
+		<div class="card-info">
+			<p>By signing up you are agreeing to our</p>
+		</div>
+	</div>
+            </div>
+  <footer>
+    <p class="footerText"><strong>Created by ChanhMinions 2020</strong></p>
+          <div class ="frame">
+              <div class="action"></div>
+            <a href="#" class="btn2">
+         <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
+        </a>
+            <a href="#" class="btn2">
+          <i class="fab fa-twitter" style="color: #00acee;"></i>
+        </a>
+            <a href="#" class="btn2">
+         <i class="fab fa-dribbble" style="color: #ea4c89;"></i>
+        </a>
+            <a href="#" class="btn2">
+         <i class="fab fa-linkedin-in" style="color:#0e76a8;"></i>
+        </a>
+            <a href="#" class="btn2">
+         <i class="fab fa-get-pocket" style="color:#ee4056;"></i>
+        </a>
+            <a href="#" class="btn2">
+         <i class="far fa-envelope"></i>
+        </a>
+        </div>
+   </footer>
+        <div class="image"></div>
+    </form>
+</body>
+            <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+              ❅
+            </div>
+            <div class="snowflake">
+              ❆
+            </div>
+            <div class="snowflake">
+              ❅
+            </div>
+            <div class="snowflake">
+              ❆
+            </div>
+            <div class="snowflake">
+              ❅
+            </div>
+            <div class="snowflake">
+              ❆
+            </div>
+          </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</html>
